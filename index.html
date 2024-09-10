@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crimson Market</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #a60000;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        /* Sidebar */
+        .sidebar {
+            background-color: #8b0000;
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .stocked-fruits {
+            background-color: #ff6666;
+            color: white;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            width: 80%;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 120px;
+            height: auto;
+        }
+        /* Main content area */
+        .main-content {
+            background-color: #a60000;
+            width: 85%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffb3b3;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            width: 100%;
+        }
+        .fruit {
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+        .not-stocked {
+            font-size: 14px;
+            color: #d9d9d9;
+        }
+        /* Colors for the fruit boxes */
+        .leopard { background-color: #ffcc00; }
+        .buddha { background-color: #ffdb4d; }
+        .dough { background-color: #fff2cc; }
+        .kilo { background-color: #bfbfbf; }
+        .dragon { background-color: #66cc66; }
+        .spirit { background-color: #66e0e0; }
+        .dark-blade { background-color: #1a1a66; }
+        .portal { background-color: #99e6ff; }
+        .blizzard { background-color: #b3e0ff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with logo and "Stocked Fruits" button -->
+        <div class="sidebar">
+            <img src="https://i.ibb.co/Z8mtS1X/IMG-7847.png" alt="Crimson Logo" class="logo">
+            <div class="stocked-fruits" onclick="openForm()">Stocked Fruits</div>
+        </div>
+
+        <!-- Main content area with Crimson Market grid -->
+        <div class="main-content">
+            <div class="header">Crimson Market</div>
+            <div class="grid">
+                <div class="fruit leopard" onclick="openForm()">Leopard <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit buddha" onclick="openForm()">Buddha <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit dough" onclick="openForm()">Dough <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit kilo" onclick="openForm()">Kilo <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit dragon" onclick="openForm()">Dragon <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit spirit" onclick="openForm()">Spirit <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit dark-blade" onclick="openForm()">Dark blade <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit portal" onclick="openForm()">Portal <div class="not-stocked">Not stocked</div></div>
+                <div class="fruit blizzard" onclick="openForm()">Blizzard <div class="not-stocked">Not stocked</div></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSfTJ74OFm6dmijaNQNWyn2O6H9yxXbgZ4hwMONYR97LqfgvLg/viewform?vc=0&c=0&w=1&flr=0', '_blank');
+        }
+    </script>
+</body>
+</html>
